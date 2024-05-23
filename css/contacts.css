@@ -1,0 +1,265 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+.navbar-nav li {
+  list-style: none;
+}
+.trans-navigation {
+  background: #111;
+}
+.rec-container {
+  /*   max-width: 1200px; */
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.pow-container {
+  max-width: 1300px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase !important;
+  margin-bottom: 0px !important;
+}
+
+.contacts-head {
+  padding-bottom: 45px;
+  padding-top: 140px;
+  background-color: #00a1e4 !important;
+}
+
+.contacts-text h3 {
+  color: #000;
+  margin-bottom: 10px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.contacts-map {
+  flex: calc(50% - 20px);
+  /* border-radius: 20px; */
+  /* overflow: hidden;
+  border: 1px solid blue; */
+}
+
+.contacts-text {
+  flex: calc(50% - 20px);
+}
+
+.contacts-text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts-text-wrapper p {
+  color: #000;
+}
+.contacts-text-wrapper a:hover {
+  color: #00a1e4;
+}
+.contacts-text-wrapper li {
+  text-align: center;
+  flex: 50%;
+}
+
+.contacts-text-wrapper li:last-child {
+  flex: 100%;
+}
+
+#wrapMap iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.icon-big {
+  font-size: 70px;
+  line-height: 100px;
+  display: block;
+}
+
+.ion-ios-location-outline:before {
+  content: "\f455";
+}
+.ion-ios-telephone-outline:before {
+  content: "\f4b8";
+}
+.ion-ios-email-outline:before {
+  content: "\f422";
+}
+
+.form-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #969696;
+}
+
+.form-container .row .align-items-center {
+  margin-top: 50px;
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.form-upper-text h3 {
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 700px;
+  margin-top: 50px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.form-img {
+  width: 100%;
+}
+
+.input-group-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  position: relative;
+  height: 60px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  border: none;
+  /* border: 1px solid #1d2027; */
+  border-radius: 10px;
+  padding-left: 10px;
+  box-shadow: 0px 0px 15px 14px rgba(235, 235, 235, 1);
+}
+.input-group textarea {
+  /* border: 1px solid #1d2027; */
+  box-shadow: 0px 0px 15px 14px rgba(235, 235, 235, 1);
+  border: none;
+}
+
+.form-submit-btn {
+  width: 100%;
+}
+
+.form-submit-btn:hover {
+  background-color: #55b9e4;
+  color: #fff;
+}
+
+.intl-tel-input.separate-dial-code .selected-flag {
+  background-color: rgb(255 255 255 / 5%);
+}
+.row-content-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+.pol_conf {
+  padding-top: 20px;
+  font-size: 14px !important;
+  color: #596163;
+}
+.form p {
+  text-align: left;
+}
+
+.pol_conf a {
+  color: #00a1e4;
+}
+
+.pol_conf a:hover {
+  color: #0289c3;
+}
+
+@media (max-width: 992px) {
+  .contacts-text-wrapper li {
+    flex: 100%;
+  }
+  .icon-big {
+    font-size: 44px;
+    line-height: 45px;
+  }
+  .contacts-text-wrapper h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    flex-wrap: wrap;
+  }
+  .contacts-map,
+  .contacts-text {
+    flex: 100%;
+  }
+  .contacts-map {
+    order: 1;
+  }
+  .contacts-text-wrapper {
+    gap: 20px;
+  }
+  .contacts-text-wrapper li {
+    flex: calc(100% / 3 - 20px);
+  }
+  #wrapMap iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 356px) {
+  .contacts-text-wrapper li {
+    flex: 100%;
+  }
+  .contacts-text-wrapper li:last-child {
+    flex: 100%;
+  }
+  #wrapMap iframe {
+    height: 300px;
+  }
+  .contacts-head {
+    padding-bottom: 35px;
+    padding-top: 120px;
+  }
+}

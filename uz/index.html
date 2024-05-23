@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="utf-8" />
+  <title>SOTA AI</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Biznes va hukumat uchun aqlli AI yechimlari" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+
+  <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="../plugins/fontawesome/css/all.css" />
+
+  <link rel="stylesheet" href="../plugins/icofont/icofont.css" />
+
+  <link rel="stylesheet" type="text/css" href="../plugins/slick-slider/slick.css" />
+  <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="../plugins/slick-slider/slick-theme.css"
+    /> -->
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="../css/aos.css" />
+    <!-- AOS 
+  <style type="text/css">
+    /* базовый контейнер, фон затемнения*/
+    #modal-advertising {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.65);
+        z-index: 999;
+        -webkit-animation: fade .6s;
+        -moz-animation: fade .6s;
+        animation: fade .6s;
+        overflow: auto;
+    }
+
+    /* модальный блок */
+    .popup {
+        top: 25%;
+        left: 0;
+        right: 0;
+        font-size: 14px;
+        margin: auto;
+        width: 85%;
+        min-width: 320px;
+        max-width: 1000px;
+        position: absolute;
+        border: 1px solid #383838;
+        background: #fefefe;
+        z-index: 1000;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        font: 14px/18px 'Tahoma', Arial, sans-serif;
+        -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+        -ms-box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+        box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+        -webkit-animation: fade .6s;
+        -moz-animation: fade .6s;
+        animation: fade .6s;
+    }
+
+    /* кнопка закрытия */
+    .close {
+        top: 10px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        border: none;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        background-color: blue;
+        cursor: pointer;
+        outline: none;
+
+    }
+
+    .close:before {
+        color: black;
+        content: "X";
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    /* кнопка закрытия при наведении */
+    .close:hover {
+        background-color: blue;
+    }
+
+    /* изображения в модальном окне */
+    .popup img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    /* миниатюры изображений */
+    .pl-left,
+    .pl-right {
+        width: 25%;
+        height: auto;
+    }
+
+    /* миниатюры справа */
+    .pl-right {
+        float: right;
+        margin: 5px 0 5px 15px;
+    }
+
+    /* миниатюры слева */
+    .pl-left {
+        float: left;
+        margin: 5px 18px 5px 0;
+    }
+
+    /* анимация при появлении блоков с содержанием */
+    @-moz-keyframes fade {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+</style>-->
+
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+  <script src="../js/8600f3.js"></script>
+</head>
+
+<body data-spy="scroll">
+  <nav class="navbar-wrapper">
+    <div class="nav-container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="../images/logo.png" alt="logo" /></a>
+        </div>
+        <div class="nav-list-wrapper">
+          <div class="nav-mobile">
+            <a id="navbar-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#!">Mahsulotlar<i class="fas fa-chevron-down"></i></a>
+              <ul class="drop-menu">
+                <li class="drop-item"><a href="sota-vk.html">SOTA VK</a></li>
+                <li class="drop-item"><a href="sota-va.html">SOTA VA</a></li>
+                <li class="drop-item"><a href="sota-vb.html">SOTA VB</a></li>
+              </ul>
+            </li>
+            <li class="nav-list-item">
+              <a href="#!">Texnologiyalar<i class="fas fa-chevron-down"></i></a>
+              <ul class="drop-menu">
+                <li class="drop-item">
+                  <a href="speech-recognition.html">Nutqni aniqlash</a>
+                </li>
+                <li class="drop-item">
+                  <a href="speech-synthesis.html">Nutq sintezi</a>
+                </li>
+                <li class="drop-item">
+                  <a href="voice-biometrics.html">Ovoz biometrikasi</a>
+                </li>
+                <li class="drop-item">
+                  <a href="text-analytics.html">Matn tahlili</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-list-item">
+              <a href="solutions.html">YECHIMLAR</a>
+            </li>
+            <li class="nav-list-item"><a href="about.html">KOMPANIYA HAQIDA</a></li>
+            <li class="nav-list-item">
+              <a href="contacts.html">Kontaktlar</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#!">Til<i class="fas fa-chevron-down"></i></a>
+              <ul class="drop-menu">
+                <li class="drop-item">
+                  <a href="../index.html"><span class="code_rus">RU</span><span class="flag-icon flag-icon-rus"> </span></a>
+                </li>
+                <li class="drop-item">
+                  <a href="./index.html"><span class="code_rus">UZ</span><span class="flag-icon flag-icon-uzb"> </span></a>
+                </li>
+                <li class="drop-item">
+                  <a href="../en/index.html"><span class="code_rus">EN</span><span class="flag-icon flag-icon-en"> </span></a>
+                </li>
+                <li class="drop-item">
+                  <a href="../es/index.html"><span class="code_rus">ES</span><span class="flag-icon flag-icon-es"> </span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="particles-js" class="banner-area banner-3">
+    <div class="overlay dark-overlay"></div>
+    <div class="d-table">
+      <div class="d-table-cell">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
+              <div class="banner-content content-padding">
+                <h1 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500" class="banner-title">
+                  Biznes va hukumat uchun aqlli AI yechimlari
+                </h1>
+                <p data-aos="zoom-in" data-aos-duration="1600" data-aos-delay="700">
+                  Mahsulotlarimiz va texnologiyalarimiz doimiy raqamlashtirish sharoitida biznes samaradorligini
+                  oshirish va raqobatbardoshlikni saqlashga yordam beradi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--
+  <div id="modal-advertising">
+    <div class="popup">
+      <a href="https://rca.plus-forum.com/25-sip-2023/zolotoj-2023/115-3i-sota-ai" target="_blank"
+        class="advertising-banner">
+        <img src="./../images/banner/Баннер Sota AI, копия.png" alt="" class="banner-web">
+        <img src="./../images/banner/Баннер Sota AI - адаптация, копия.png" alt="" class="banner-mob">
+      </a>
+      <button class="close" title="Закрыть"
+        onclick="document.getElementById('modal-advertising').style.display='none';"></button>
+    </div>
+  </div>
+
+  <section class="advertising">
+    <a href="https://rca.plus-forum.com/25-sip-2023/zolotoj-2023/115-3i-sota-ai" target="_blank" class="advertising-banner">
+      <img src="./../images/banner/Баннер Sota AI, копия.png" alt="" class="banner-web">
+      <img src="./../images/banner/Баннер Sota AI - адаптация, копия.png" alt="" class="banner-mob">
+
+    </a>
+  </section>-->
+  <section id="blog" class="section-padding bg-main">
+    <div class="products-title">
+      <h2>Mahsulotlar</h2>
+    </div>
+    <div class="container container-blog">
+
+      <div class="row min100vh">
+        <div class="col-lg-4 col-sm-0 col-md-0 col-img">
+          <div class="blog-block">
+            <div class="block-card-img">
+              <img src="https://i.pinimg.com/originals/42/78/76/42787621ed6d40f0c30f0ae423fc572c.gif" alt=""
+                class="card-img w-100" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-6 mb">
+          <div class="analytics_wrapper">
+            <div class="analytics_info">
+              <div class="analytics__title">
+                <h3>SOTA VOX Kit</h3>
+              </div>
+              <div class="analytics__text">
+                <h4>AI - nutq texnologiyalari asosida mahsulot va biznes yechimlarni yaratish platformasi.</h4>
+                <p>
+                  API orqali nutq texnologiyalarining barcha afzalliklari va imkoniyatlaridan foydalangan holda aqlli
+                  mahsulotlar va yechim yarating.
+                </p>
+              </div>
+            </div>
+            <a class="analytics_btn" href="sota-vk.html">Ko'proq bilib oling</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12 col-md-6">
+          <div class="analytics_wrapper">
+            <div class="analytics_info">
+              <div class="analytics__title">
+                <h3>SOTA VOX Analytics</h3>
+              </div>
+              <div class="analytics__text">
+                <h4>Omni-kanal nutq tahlili</h4>
+                <p>
+                  Qo'ng'iroqlar va suhbatlarni tahlil qiling va aloqa markazining samaradorligini oshirish uchun barcha
+                  xodimlarning istalgan kanaldagi mijozlar bilan ovozli aloqalarini baholang.
+                </p>
+              </div>
+            </div>
+            <a class="analytics_btn" href="sota-va.html">Ko'proq bilib oling</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-0 col-md-0 col-img">
+          <div class="blog-block">
+            <div class="block-card-img">
+              <img src="https://i.pinimg.com/originals/eb/1c/d6/eb1cd6dc77d7c9ce7a10b8503f065bea.gif" alt=""
+                class="card-img w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider-section">
+    <div class="slider-section-title">
+      <h2>Texnologiyalar</h2>
+    </div>
+
+    <div class="slider-container">
+      <div class="slick-slider">
+        <div>
+          <img src="../images/slider/index-page/SOTA-VOX-Kit-ASR.png" alt="SOTA-VOX-Kit-ASR" />
+          <div class="text-content-slider">
+            <h3>Nutqni aniqlash</h3>
+            <p>
+              Audio va video yozuvlarni maksimal aniqlik va yuqori tezlikda transkripsiya qiling
+            </p>
+            <a href="speech-recognition.html">Ko'proq ma'lumot oling</a>
+          </div>
+        </div>
+
+        <div>
+          <img src="../images/slider/index-page/SOTA-VOX-TTS.png" alt="SOTA-VOX-TTS" />
+          <div class="text-content-slider">
+            <h3>Nutq sintezi</h3>
+            <p>
+              Matn va kontentingizni ovozli qiling. Undan robotlar, telefon qo'ng'iroqlari va ovozli menyular uchun
+              foydalaning. Har qanday vazifa uchun o'zingizning noyob ovozingizni yarating.
+            </p>
+            <a href="speech-synthesis.html">Ko'proq ma'lumot oling</a>
+          </div>
+        </div>
+        <div>
+          <img src="../images/slider/index-page/SOTA-VOICE-ID.png" alt="SOTA-VOICE-ID" />
+          <div class="text-content-slider">
+            <h3>Ovoz biometrikasi</h3>
+            <p>
+              Har qanday tilda va yuqori aniqlikdagi matndan mustaqil ovozli identifikatsiya
+            </p>
+            <a href="voice-biometrics.html">Ko'proq ma'lumot oling</a>
+          </div>
+        </div>
+
+        <div>
+          <img src="../images/slider/index-page/text-analytics.png" alt="text-analytics" />
+          <div class="text-content-slider">
+            <h3>Matn tahlili</h3>
+            <p>
+              Audio yozuvlardan mahsulot haqida eslatmalar, brendlar, sharhlar va boshqa ma'lumotlarni ajratib oling. Tarkib, ohang va kontekstni tahlil qiling
+            </p>
+            <a href="text-analytics.html">Ko'proq ma'lumot oling</a>
+          </div>
+        </div>
+      </div>
+      <div class="prev-arrow"></div>
+      <div class="next-arrow"></div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer"></footer>
+
+  <div id="wptime-plugin-preloader"></div>
+
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <script src="../plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
+    <script src="../plugins/google-map/map.js"></script> -->
+
+  <script src="../js/script.js"></script>
+  <script src="../js/3881aa.js"></script>
+
+  <script type="text/javascript" src="../plugins/slick-slider/slick.min.js"></script>
+  <script type="text/javascript" src="../js/slick-slider.js"></script>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    window.addEventListener("load", function () {
+      let navbar = document.querySelector(".navbar-wrapper");
+      let navlist = document.querySelector(".nav-list");
+      let scrollPosition = window.scrollY;
+
+      if (scrollPosition > 50) {
+        navbar.style.backgroundColor = "black";
+        navlist.style.backgroundColor = "black";
+      } else {
+        navbar.style.backgroundColor = "transparent";
+        navlist.style.backgroundColor = "transparent";
+      }
+
+      window.addEventListener("scroll", function () {
+        let scrollPosition = window.scrollY;
+
+        if (scrollPosition > 50) {
+          navbar.style.backgroundColor = "black";
+          navlist.style.backgroundColor = "black";
+        } else {
+          navbar.style.backgroundColor = "transparent";
+          navlist.style.backgroundColor = "transparent";
+        }
+      });
+    });
+  </script>
+    <script type="text/javascript">
+      var delay_popup = 2000; setTimeout("document.getElementById('modal-advertising').style.display='block'", delay_popup);
+    </script>
+</body>
+
+</html>

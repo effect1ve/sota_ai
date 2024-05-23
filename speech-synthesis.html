@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Синтез речи | SOTA AI</title>
+  <meta name="description"
+    content="Синтез речи от SOTA AI – передовые технологии для создания качественной речи с помощью искусственного интеллекта. Узнайте, как наши инструменты и алгоритмы обеспечивают естественность и четкость в синтезе речи." />
+  <meta name="keywords"
+    content="Речевая аналитика, Голосовые боты,Голосовая биометрия, Синтез речи, Искуственный интеллект, Искуственный интелект в ташкенте, ИИ Технологии, Текстовая аналитика" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@15.1.0/build/css/intlTelInput.css" />
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+  <!-- fontawesome css -->
+
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.css" />
+  <!-- Icofont -->
+  <link rel="stylesheet" href="plugins/icofont/icofont.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/speech-synthesis.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="css/aos.css" />
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(97383010, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/97383010" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <!--Favicon-->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <script src="js/8600f3.js"></script>
+  <div id="wptime-plugin-preloader"></div>
+</head>
+
+<body>
+  <nav class="navbar-wrapper">
+    <div class="nav-container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <div class="nav-list-wrapper">
+          <div class="nav-mobile">
+            <a id="navbar-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#!">Продукты<i class="fas fa-chevron-down"></i></a>
+              <ul class="drop-menu">
+                <li class="drop-item"><a href="sota-vk.html">SOTA VK</a></li>
+                <li class="drop-item"><a href="sota-va.html">SOTA VA</a></li>
+                <li class="drop-item"><a href="sota-vb.html">SOTA VB</a></li>
+              </ul>
+            </li>
+            <li class="nav-list-item">
+              <a href="#!">Технологии<i class="fas fa-chevron-down"></i></a>
+              <ul class="drop-menu">
+                <li class="drop-item">
+                  <a href="speech-recognition.html">Распознавание речи</a>
+                </li>
+                <li class="drop-item">
+                  <a href="speech-synthesis.html">Синтез речи</a>
+                </li>
+                <li class="drop-item">
+                  <a href="voice-biometrics.html">Голосовая биометрия</a>
+                </li>
+                <li class="drop-item">
+                  <a href="text-analytics.html">Текстовая аналитика</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-list-item">
+              <a href="solutions.html">Решения</a>
+            </li>
+            <li class="nav-list-item"><a href="about.html">О компании</a></li>
+            <li class="nav-list-item">
+              <a href="contacts.html">Контакты</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#!">Язык<i class="fas fa-chevron-down"></i></a>
+              <ul class="drop-menu">
+                <li class="drop-item">
+                  <a href="./speech-synthesis.html"><span class="code_rus">RU</span><span
+                      class="flag-icon flag-icon-rus"> </span></a>
+                </li>
+                <li class="drop-item">
+                  <a href="./uz/speech-synthesis.html"><span class="code_rus">UZ</span><span
+                      class="flag-icon flag-icon-uzb"> </span></a>
+                </li>
+                <li class="drop-item">
+                  <a href="./en/speech-synthesis.html"><span class="code_rus">EN</span><span
+                      class="flag-icon flag-icon-en"> </span></a>
+                </li>
+                <li class="drop-item">
+                  <a href="./es/speech-synthesis.html"><span class="code_rus">ES</span><span
+                      class="flag-icon flag-icon-es"> </span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--MAIN BANNER AREA STARt -->
+  <div id="banner" class="banner-area banner-2">
+    <div id="particles-js" class="overlay gr-overlay"></div>
+    <div class="d-table">
+      <div class="d-table-cell">
+        <div class="rec-container">
+          <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500" class="content-banner">
+            <div class="content-banner-title">
+              <h1 class="banner-title">
+                SOTA VOX TTS | <span>Синтез речи</span>
+              </h1>
+            </div>
+
+            <p>
+              Озвучивайте тексты и контент. <br />
+              Используйте для роботов, обзвона и голосовых меню. <br />
+              Создайте свой уникальный голос для любых задач.
+            </p>
+            <div class="content-banner-btn">
+              <a class="flowing-scroll" href="#form-section">Протестировать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cover__arrow">
+      <a href="#section-2" class="flowing-scroll cover__arrow-wrapper cover__arrow-wrapper_animated">
+        <svg role="presentation" class="cover__arrow-svg" x="0px" y="0px" width="38.417px" height="18.592px"
+          viewBox="0 0 38.417 18.592" style="enable-background: new 0 0 38.417 18.592">
+          <g>
+            <path
+              d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z">
+            </path>
+          </g>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <section id="section-2" class="section-2">
+    <div class="section-2-title">
+      <div class="rec-container">
+        <h2 data-aos="zoom-in" data-aos-duration="1000">
+          Синтезируйте высококачественные голоса для любых задач
+        </h2>
+      </div>
+    </div>
+    <div class="rec-container">
+      <ul class="list">
+        <li data-aos="fade-up" class="list-item">
+          <img src="images/speech-synthesis/Голосовые боты.svg" alt="" />
+          <div class="list-item--text">
+            <h3>Голосовые боты</h3>
+          </div>
+        </li>
+        <li data-aos="fade-up" class="list-item">
+          <img src="images/speech-synthesis/Ассистенты в приложениях.svg" alt="" />
+          <div class="list-item--text">
+            <h3>Ассистенты в приложениях</h3>
+          </div>
+        </li>
+        <li data-aos="fade-up" class="list-item">
+          <img src="images/speech-synthesis/IVR.svg" alt="" />
+          <div class="list-item--text">
+            <h3>IVR</h3>
+          </div>
+        </li>
+        <li data-aos="fade-up" class="list-item">
+          <img src="images/speech-synthesis/Озвучка медиаконтента.svg" alt="" />
+          <div class="list-item--text">
+            <h3>Озвучка медиаконтента</h3>
+          </div>
+        </li>
+        <li data-aos="fade-up" class="list-item">
+          <img src="images/speech-synthesis/Озвучка курсов и презентаций.svg" alt="" />
+          <div class="list-item--text">
+            <h3>Озвучка курсов и презентаций</h3>
+          </div>
+        </li>
+        <li data-aos="fade-up" class="list-item">
+          <img src="images/speech-synthesis/Системы оповещения.svg" alt="" />
+          <div class="list-item--text">
+            <h3>Системы оповещения</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-3">
+    <div class="pow-container">
+      <div class="section-3-title">
+        <h2 data-aos="zoom-in" data-aos-duration="1000">Преимущества</h2>
+      </div>
+
+      <ul class="list-model">
+        <li data-aos="fade-right" class="list-model--item">
+          <div class="model-item--header">
+            <img src="images/speech-synthesis/Cloud  On-premise.svg" alt="" />
+            <h3>Cloud | On-premise</h3>
+          </div>
+
+          <div class="text-wrapper">
+            <p>
+              Возможность использовать как облачный сервис или развернуть ПО
+              на своих GPU-серверах.
+            </p>
+          </div>
+        </li>
+        <li data-aos="fade-up" class="list-model--item">
+          <div class="model-item--header">
+            <img src="images/speech-synthesis/Реалистичные голоса.svg" alt="" />
+            <h3>Реалистичные голоса</h3>
+          </div>
+
+          <div class="text-wrapper">
+            <p>
+              Высококачественный синтез речи на базе нейросетевой архитектуры
+              Tacotron2 и WaveNet
+            </p>
+          </div>
+        </li>
+        <li data-aos="fade-left" class="list-model--item">
+          <div class="model-item--header">
+            <img src="images/speech-synthesis/Brand Voice.svg" alt="" />
+            <h3>Brand Voice</h3>
+          </div>
+
+          <div class="text-wrapper">
+            <p>
+              Поможем создать уникальный голос для озвучки фирменного контента
+              в любых каналах
+            </p>
+          </div>
+        </li>
+        <li data-aos="fade-right" class="list-model--item">
+          <div class="model-item--header">
+            <img src="images/speech-synthesis/Высокая скорость.svg" alt="" />
+            <h3>Высокая скорость</h3>
+          </div>
+
+          <div class="text-wrapper">
+            <p>
+              Минимум пауз и задержек при озвучке для более реалистичного
+              диалога.
+            </p>
+          </div>
+        </li>
+        <li data-aos="fade-up" class="list-model--item">
+          <div class="model-item--header">
+            <img src="images/speech-synthesis/Управление произношением.svg" alt="" />
+            <h3>Управление произношением</h3>
+          </div>
+
+          <div class="text-wrapper">
+            <p>
+              Управляйте скоростью, паузами и интонацией. Расставляйте акценты
+              для достижения наилучшего звучания.
+            </p>
+          </div>
+        </li>
+        <li data-aos="fade-left" class="list-model--item">
+          <div class="model-item--header">
+            <img src="images/speech-synthesis/API.svg" alt="" />
+            <h3>API</h3>
+          </div>
+
+          <div class="text-wrapper">
+            <p>
+              Поддержка REST API и gRPC. Простая интеграция по протоколу
+              HTTP/HTTPS
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-4">
+    <div class="rec-container">
+      <div class="section-4-title">
+        <h2 data-aos="zoom-in" data-aos-duration="1000">
+          Технические особенности
+        </h2>
+      </div>
+      <div class="accordion">
+        <div data-aos="fade-up" class="accordion-item">
+          <div class="accordion-item-header">
+            <h3>Поддерживаемые голоса и языки</h3>
+            <div class="btn-plus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-plus-lg"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+                  stroke-width="1"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <ul>
+                <li><strong>Русский язык: </strong> мужской, женский</li>
+                <li><strong>Английский язык: </strong> мужской, женский</li>
+                <li><strong>Казахский язык: </strong> мужской, женский</li>
+                <li><strong>Узбекский язык: </strong> мужской, женский</li>
+                <!-- <li>Английский язык (Cloud/On-Premise)</li>
+                  <li>Казахский язык (Cloud/On-Premise)</li>
+                  <li>Узбекский язык (Cloud/On-Premise)</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div data-aos="fade-up" class="accordion-item">
+          <div class="accordion-item-header">
+            <h3>Минимальные аппаратные требования для On-premise</h3>
+            <div class="btn-plus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-plus-lg"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+                  stroke-width="1"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="accordion-item-body" style="max-height: 0px">
+            <div class="accordion-item-body-content">
+              <ul>
+                <li>2-х CPU (2 физических ядер) с частотой 2.4 GHz</li>
+                <li>
+                  GPU NVIDIA с поддержкой CUDA и объемом ОЗУ не менее 8 ГБ
+                </li>
+                <li>8 ГБ ОЗУ</li>
+                <li>30 ГБ дискового пространства</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div data-aos="fade-up" class="accordion-item">
+          <div class="accordion-item-header">
+            <h3>Технические требования</h3>
+            <div class="btn-plus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-plus-lg"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+                  stroke-width="1"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <ul>
+                <li>
+                  64-х разрядная операционная система на базе Linux (CentOS не
+                  ниже 7.X, Debian не ниже 10.x , Astra Linux не ниже 1.7)
+                </li>
+                <li>docker, nvidia-docker, docker-compose</li>
+                <li>драйвер cuda версии 10.2+</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div data-aos="fade-up" class="accordion-item">
+          <div class="accordion-item-header">
+            <h3>Формат выходных данных</h3>
+            <div class="btn-plus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-plus-lg"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+                  stroke-width="1"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <ul>
+                <li>частота дискретизации 22050 Гц</li>
+                <li>кодек pcm_s16le</li>
+                <li>количество каналов 1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="form-section" class="form-section">
+    <h2 data-aos="zoom-in" data-aos-duration="1000">Обсудим проект?</h2>
+    <p data-aos="zoom-in" data-aos-duration="1300">
+      Оперативно свяжемся с Вами и ответим на любые вопросы
+    </p>
+    <div class="form-container">
+      <div class="row align-items-center">
+        <div data-aos="fade-right" class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <img class="form-img" src="images/speech-synthesis/для ос.svg" alt="bg-form" />
+        </div>
+        <div data-aos="fade-left" class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <div class="form-upper-text">
+            <h3>Ваши контакты:</h3>
+          </div>
+          <form id="form" action="sendFormToEmail.php" method="POST" class="form">
+            <div class="input-group-wrapper">
+              <div class="input-group input-group_name">
+                <input name="name" type="text" class="input-name" placeholder="Имя" />
+              </div>
+              <div class="input-group input-group_comp">
+                <input name="company" type="text" class="input-comp" placeholder="Компания" />
+              </div>
+              <div class="input-group input-group_email">
+                <input name="email" type="email" class="input-email" placeholder="E-mail" />
+              </div>
+              <div class="input-group input-group_tel">
+                <input name="phone" id="phone" type="tel" class="input-tel" placeholder="(999) 999-99-99" />
+              </div>
+              <div class="input-group input-group_textarea">
+                <textarea class="input-textarea" name="textarea" id="textarea" cols="30" rows="3"
+                  placeholder="Расскажите о задаче"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="form-submit-btn">Отправить</button>
+            <div class="send-success">
+              <p>Благодарим вас за обращение, мы скоро свяжемся с вами!</p>
+            </div>
+            <p class="pol_conf">
+              Нажимая кнопку, вы соглашаетесь с
+              <a href="policy.html">политикой конфиденциальности</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  FOOTER AREA START  -->
+  <footer id="footer" class="footer"></footer>
+
+  <!--  FOOTER AREA END  -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap css -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/3881aa.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@15.1.0/build/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    window.addEventListener("load", function () {
+      let navbar = document.querySelector(".navbar-wrapper");
+      let navlist = document.querySelector(".nav-list");
+      let scrollPosition = window.scrollY;
+
+      if (scrollPosition > 50) {
+        navbar.style.backgroundColor = "black";
+        navlist.style.backgroundColor = "black";
+      } else {
+        navbar.style.backgroundColor = "transparent";
+        navlist.style.backgroundColor = "transparent";
+      }
+
+      window.addEventListener("scroll", function () {
+        let scrollPosition = window.scrollY;
+
+        if (scrollPosition > 50) {
+          navbar.style.backgroundColor = "black";
+          navlist.style.backgroundColor = "black";
+        } else {
+          navbar.style.backgroundColor = "transparent";
+          navlist.style.backgroundColor = "transparent";
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

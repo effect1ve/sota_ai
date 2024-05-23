@@ -1,0 +1,251 @@
+li {
+  list-style: none;
+}
+
+
+.nav-container {
+  max-width: 1920px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.navbar-wrapper {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 1111;
+  width: 100%;
+  transition: background-color 0.5s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+
+}
+
+.logo img {
+  max-width: 150px;
+}
+.fa-chevron-down {
+  font-size: 10px;
+  vertical-align: 2px;
+  margin-left: 3px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  transition: background-color 0.5s;
+}
+.nav-list-item {
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 65px;
+  line-height: 1.2;
+}
+.nav-list-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.flag-icon {
+  margin-left: 5px;
+}
+
+.drop-menu {
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  /* display: inline-block; */
+  min-width: 120px;
+  visibility: hidden;
+  background: #fff;
+  padding-left: 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px 1px rgba(245, 244, 244, 0.726),
+    -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  transition: all 0.3s ease 0s;
+  transform: translateY(20%);
+  z-index: 111;
+}
+.drop-menu li a {
+  color: #000;
+}
+
+.drop-item {
+  padding: 0;
+}
+
+.drop-item:first-child {
+  margin-top: 5px;
+}
+.drop-item:last-child {
+  margin-bottom: 5px;
+}
+
+.drop-item a {
+  padding: 12px 20px;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.drop-item a:hover {
+  background-color: #00a0e425;
+  color: #55b047;
+}
+
+@media (max-width: 1307px) {
+  .nav-list-item {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 1217px) {
+  .nav-list-item {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 1157px) {
+  .nav-list-item {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1097px) {
+  .nav-list-item {
+    margin-left: 20px;
+  }
+  .nav-list-item a {
+    font-size: 14px;
+  }
+  .drop-item a {
+    font-size: 14px;
+  }
+}
+
+.nav-mobile {
+  background: transparent;
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 23px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .nav-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .logo {
+    padding-left: 20px;
+  }
+
+  .nav-mobile {
+    display: block;
+    padding-right: 20px;
+  }
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 86px;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 40px;
+    background: transparent;
+    text-align: center;
+    z-index: 111;
+    transition: background-color 0.5s;
+  }
+  .nav-list-item {
+    max-width: 240px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .nav-list-item a {
+    font-size: 16px;
+  }
+  .drop-menu {
+    position: static;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: none;
+    visibility: hidden;
+    transform: translateY(0);
+    display: none;
+    opacity: 0;
+  }
+  .drop-item:last-child, .drop-item:first-child {
+    margin: 0;
+  }
+  .drop-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .drop-item a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+  }
+  .navbar {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+}
+
+#navbar-toggle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 35px 16px 0px;
+}
+#navbar-toggle span,
+#navbar-toggle span:before,
+#navbar-toggle span:after {
+  border-radius: 1px;
+  height: 3px;
+  width: 30px;
+  background: #ffffff;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+
+#navbar-toggle span {
+  position: relative;
+}
+#navbar-toggle span:before {
+  position: absolute;
+  top: -10px;
+}
+#navbar-toggle span:after {
+  position: absolute;
+  bottom: -10px;
+}
+#navbar-toggle.active span {
+  background-color: transparent;
+}
+#navbar-toggle.active span:before,
+#navbar-toggle.active span:after {
+  top: 0;
+}
+#navbar-toggle.active span:before {
+  transform: rotate(-45deg);
+}
+#navbar-toggle.active span:after {
+  transform: rotate(45deg);
+}
