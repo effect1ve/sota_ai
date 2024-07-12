@@ -1,1 +1,1 @@
-Its a real case. Check this in https://sotaai.uz/
+Its a real case. Check this on https://sotaai.uz/
